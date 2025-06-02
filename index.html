@@ -1,10 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abhishek Machale | Quantitative Finance Portfolio</title>
+  <meta name="description" content="Explore Abhishek Machale's portfolio in quantitative finance, including trading strategy simulations, econometric forecasting, and valuation models.">
+  <meta name="author" content="Abhishek Machale">
+  <meta name="keywords" content="Quantitative Finance, Portfolio, Python, R, Investment, Abhishek Machale, Valuation, Algorithmic Trading, Econometrics, Trading Blog, Financial Research">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
@@ -74,6 +77,28 @@
       border: 1px solid #30363d;
       border-radius: 6px;
     }
+    .blog-post {
+      background-color: #0e141c;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid #58a6ff;
+    }
+    .blog-post h4 {
+      margin: 0 0 0.5rem;
+      color: #c9d1d9;
+    }
+    .blog-post small {
+      color: #8b949e;
+      font-style: italic;
+    }
+    .blog-content {
+      background: #0e141c;
+      padding: 2rem;
+      margin: 2rem 4rem;
+      border-left: 5px solid #58a6ff;
+      border-radius: 6px;
+    }
   </style>
 </head>
 <body>
@@ -84,37 +109,34 @@
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
+      <a href="#blog">Blog</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section id="about">
     <h2> About Me</h2>
-    <p>I’m a finance professional with 2+ years of experience in hedge fund operations, P&L analytics, and quantitative modeling. Currently pursuing MSc in Investment & Finance at Queen Mary University of London. My work blends econometric rigor with real-time market applications.</p>
+    <p>I’m a finance professional with 2+ years of experience in hedge fund operations, market analytics, and quantitative modeling. MSc in Investment & Finance from Queen Mary University of London. I combine econometrics and programming to create real-time, data-driven solutions in trading and valuation.</p>
   </section>
 
   <section id="projects">
-    <h2>📈 Quant Projects</h2>
-
+    <h2> Quant Projects</h2>
     <div class="project">
       <h3>Alpha Strategy Simulator (Python)</h3>
       <p>Backtested momentum & mean-reversion strategies using Pandas, NumPy, and Matplotlib to assess Sharpe ratio and volatility-adjusted returns.</p>
       <a class="button" href="https://github.com/abhishekmachale/alpha-strategy-simulator" target="_blank"><i class="fas fa-code"></i> View on GitHub</a>
     </div>
-
     <div class="project">
       <h3>Econometric Forecasting Model (R)</h3>
       <p>Built linear regression models to predict sector performance using 10 years of macroeconomic data. Visualized using ggplot2 and tidyverse.</p>
       <a class="button" href="./forecasting_model.pdf" target="_blank"><i class="fas fa-file-pdf"></i> View Report</a>
       <iframe class="embed-preview" src="./forecasting_model.pdf" width="100%" height="400px"></iframe>
     </div>
-
     <div class="project">
       <h3>Meta Valuation Engine (Python + Excel)</h3>
       <p>Automated DCF/Comps model generation using Python for web scraping and Excel macros for PE firm analysis.</p>
       <a class="button" href="./meta_valuation_engine.docx" target="_blank"><i class="fas fa-download"></i> Download Project</a>
     </div>
-
     <div class="project">
       <h3>M&A Dilution & Accreditation Model</h3>
       <p>Analyzed shareholder impact scenarios in real estate M&A using advanced spreadsheet logic and dynamic equity assumptions.</p>
@@ -124,15 +146,33 @@
 
   <section id="experience">
     <h2> Experience</h2>
-    <p><strong>State Street & Northern Trust</strong> – Reconciled hedge fund trades, automated FX exposure tracking, and built P&L dashboards for risk analytics.</p>
-    <p><strong>Croftz & Credent Advisory</strong> – Delivered DCF valuations and yield models; assisted senior partners with investor pitches and due diligence.</p>
+    <p><strong>Business Development Executive – Croftz (2024 – Present)</strong><br>Developed investor outreach strategies and financial models for AI-driven RegTech products. Collaborated with compliance and dev teams to translate complex financial compliance concepts into actionable business models. Built KPI dashboards for VC pitch decks.</p>
+    <p><strong>Finance Intern – Credent Advisory (2023 – 2024)</strong><br>Constructed R-based real estate valuation models integrating hedonic pricing and regression analysis. Produced dynamic Excel dashboards for project viability analysis. Supported transaction due diligence by conducting local market and cap rate research.</p>
+    <p><strong>Hedge Fund Analyst – Northern Trust (2023)</strong><br>Built VBA-based dashboards for P&L tracking of high-frequency FX portfolios. Managed day-end reconciliations of structured notes and forwards. Designed automated scripts to calculate bond yield metrics from live market feeds.</p>
+    <p><strong>Middle Office Analyst – State Street (2021 – 2023)</strong><br>Led the reconciliation of over 200 UCITS and mutual funds. Developed SQL logic to identify NAV discrepancies and break trends. Collaborated with global teams to reduce break resolution time by 30%.</p>
+  </section>
+
+  <section id="blog">
+    <h2> Technical Blog</h2>
+    <div class="blog-post">
+      <h4>Intro to Econometric Alpha: Modeling S&P Returns</h4>
+      <small>June 2024</small>
+      <p>This post walks through how to build linear and autoregressive models in R to forecast S&P returns using macroeconomic indicators.</p>
+      <a class="button" href="./blog-econometric-alpha.html"><i class="fas fa-book-open"></i> Read My Article</a>
+    </div>
+    <div class="blog-post">
+      <h4>Python for Traders: Moving Average Crossover Bot</h4>
+      <small>Coming July 2024</small>
+      <p>Step-by-step implementation of a trading bot using SMA/EMA crossover signals, complete with backtest and performance evaluation in Python.</p>
+      <a class="button" href="#"><i class="fas fa-book-open"></i> Coming Soon</a>
+    </div>
   </section>
 
   <section id="contact">
     <h2> Contact</h2>
     <p>Email: abhishekmachale310@gmail.com</p>
     <p>LinkedIn: <a href="https://linkedin.com/in/abhishekmachale" target="_blank">abhishekmachale</a></p>
-    <p>Resume: <a class="button" href="./Abhishek_Machale_Resume.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Download PDF</a></p>
+    <p>Resume: <a class="button" href="./Abhishek_Machale_Resume.docx" target="_blank"><i class="fas fa-file-pdf"></i> Download PDF</a></p>
   </section>
 
   <footer>
