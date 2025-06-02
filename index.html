@@ -3,116 +3,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abhishek Machale | Quant Portfolio</title>
-  <meta name="description" content="Portfolio of Abhishek Machale showcasing quantitative finance, econometrics, and Python-based trading projects.">
-  <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Abhishek Machale | Quantitative Finance Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
       background-color: #0d1117;
       color: #c9d1d9;
+      line-height: 1.6;
     }
     header {
-      text-align: center;
-      padding: 2rem;
-    }
-    h1 {
-      color: #58a6ff;
-    }
-    p.subtitle {
-      color: #8b949e;
-      font-size: 1.1rem;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      padding: 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .project, .blog-post {
       background: #161b22;
-      border: 1px solid #30363d;
-      border-radius: 8px;
-      padding: 1.5rem;
+      padding: 2rem;
+      text-align: center;
     }
-    .project h3, .blog-post h3 {
-      color: #79c0ff;
-      margin-top: 0;
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
     }
-    .project p, .blog-post p {
-      font-size: 0.95rem;
-      line-height: 1.5;
-    }
-    .button {
-      display: inline-block;
-      margin-top: 1rem;
-      margin-right: 0.5rem;
-      padding: 0.4rem 0.9rem;
-      background-color: #238636;
-      color: white;
+    nav a {
+      color: #58a6ff;
+      margin: 0 1rem;
       text-decoration: none;
-      border-radius: 5px;
-      font-size: 0.9rem;
     }
-    .button:hover {
-      background-color: #2ea043;
+    section {
+      padding: 2rem 4rem;
+    }
+    h2 {
+      border-bottom: 2px solid #30363d;
+      padding-bottom: 0.5rem;
+    }
+    .project {
+      background: #161b22;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      transition: transform 0.3s;
+    }
+    .project:hover {
+      transform: scale(1.02);
+    }
+    .project h3 {
+      color: #58a6ff;
+      margin-top: 0;
     }
     footer {
       text-align: center;
       padding: 2rem;
-      color: #8b949e;
       font-size: 0.9rem;
+      color: #8b949e;
+    }
+    a.button {
+      background: #238636;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 0.5rem;
+      transition: background 0.3s;
+    }
+    a.button:hover {
+      background: #2ea043;
+    }
+    .embed-preview {
+      margin-top: 1rem;
+      border: 1px solid #30363d;
+      border-radius: 6px;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Abhishek Machale</h1>
-    <p class="subtitle">Quantitative Finance | Econometrics | Python Trading Systems</p>
+    <p>Quantitative Finance | Systematic Trading | Python & R Developer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section class="grid">
+  <section id="about">
+    <h2>👋 About Me</h2>
+    <p>I’m a finance professional with 2+ years in investment operations, P&L analytics, and quantitative modeling. I hold an MSc in Investment & Finance from Queen Mary University of London. My work blends econometric rigor, trading system design, and strategic insights into systematic investing.</p>
+  </section>
+
+  <section id="projects">
+    <h2>📈 Quant Projects</h2>
+
     <div class="project">
       <h3>Econometric Alpha Forecasting (Python)</h3>
-      <p>Used S&P 500, Unemployment, and CPI time-series data to forecast market returns. Applied econometric regression, tested coefficients, and plotted predictions against historical benchmarks.</p>
-      <a class="button" href="./econometric_alpha_model.py" target="_blank"><i class="fas fa-download"></i> Download Python Code</a>
-      <a class="button" href="./econometric-alpha-visual.html" target="_blank"><i class="fas fa-chart-line"></i> View Visual Model</a>
+      <p>Used S&P 500, unemployment, and CPI data to forecast market returns using econometric regression and plotted real-time model output.</p>
+      <a class="button" href="./econometric_alpha_model.py" target="_blank"><i class="fas fa-code"></i> Python Code</a>
+      <a class="button" href="./econometric-alpha-visual.html" target="_blank"><i class="fas fa-chart-line"></i> View Visual</a>
     </div>
 
     <div class="project">
       <h3>Meta Valuation Engine (Python + Excel)</h3>
-      <p>Developed a multi-factor DCF and relative valuation framework for Meta Platforms using Python integration with Excel. Conducted scenario analysis and incorporated macroeconomic variables.</p>
-      <a class="button" href="./meta_valuation_engine.docx" target="_blank"><i class="fas fa-file-word"></i> Download Model</a>
+      <p>Multi-factor DCF and relative valuation for Meta Platforms using macroeconomic drivers and Python-Excel automation.</p>
+      <a class="button" href="./meta_valuation_engine.docx" target="_blank"><i class="fas fa-download"></i> Download DOCX</a>
     </div>
 
     <div class="project">
-      <h3>M&A Dilution Model (Real Estate)</h3>
-      <p>Built a dynamic M&A accreditation and dilution model for REITs. Assessed accretive impact, financing assumptions, and integration synergies.</p>
-      <a class="button" href="./ma_dilution_model.xls.xls" target="_blank"><i class="fas fa-file-excel"></i> Download Model</a>
+      <h3>M&A Dilution & Accreditation Model</h3>
+      <p>Built an M&A model for REITs assessing share dilution and integration effects. Includes equity assumptions and accretion analysis.</p>
+      <a class="button" href="./ma_dilution_model.xls" target="_blank"><i class="fas fa-download"></i> Download Excel</a>
     </div>
   </section>
 
-  <section class="grid">
-    <div class="blog-post">
-      <h3>Econometric Alpha: Forecasting S&P 500 Returns</h3>
-      <p>This post dives into the methodology and application of econometric modeling to forecast stock market returns. Real-world economic data meets Python in an intuitive, results-driven framework.</p>
-      <a class="button" href="./blog-econometric-alpha.html" target="_blank"><i class="fas fa-book-reader"></i> Read Blog</a>
-    </div>
+  <section id="experience">
+    <h2>💼 Experience</h2>
+    <p><strong>State Street (Investment Operations Analyst)</strong> – Delivered end-of-day reconciliations for hedge fund clients, automated FX exposure tracking using Excel macros, and built Python-based dashboards for P&L breakdowns. Supported NAV validation and client reporting.</p>
+    <p><strong>Northern Trust (Trade Support)</strong> – Handled multi-asset settlements and monitored trade breaks across front/middle/back office. Collaborated with custodians and clients to ensure timely position adjustments.</p>
+    <p><strong>Croftz & Credent Advisory</strong> – Created DCF, relative, and merger models for private equity deals. Helped prepare investment memoranda, pitchbooks, and assisted in valuation due diligence.</p>
+  </section>
 
-    <div class="blog-post">
-      <h3>Python for Traders: Moving Average Crossover Bot</h3>
-      <p>Explore how a simple yet powerful strategy like moving average crossovers can be fully automated in Python with backtesting and visual results. Ideal for beginner quants.</p>
-      <a class="button" href="./blog-macrossover.html" target="_blank"><i class="fas fa-book-reader"></i> Read Blog</a>
-    </div>
+  <section id="contact">
+    <h2>📬 Contact</h2>
+    <p>Email: abhishekmachale310@gmail.com</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/abhishekmachale" target="_blank">linkedin.com/in/abhishekmachale</a></p>
+    <p>Resume: <a class="button" href="./Quant Analyst.docx" target="_blank"><i class="fas fa-file-word"></i> Download Resume</a></p>
   </section>
 
   <footer>
-    &copy; 2024 Abhishek Machale — Quantitative Finance Portfolio Site
+    &copy; 2024 Abhishek Machale | Built with GitHub Pages
   </footer>
 </body>
 </html>
+
